@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Place"
+    android:background="@drawable/Rectangle7">
+
+    <Button
+        android:id="@+id/backButton2"
+        android:layout_width="43dp"
+        android:layout_height="39dp"
+        android:background="@drawable/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <Button
+        android:id="@+id/settingsButton2"
+        android:layout_width="43dp"
+        android:layout_height="39dp"
+        android:background="@drawable/sets"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="254dp"
+        android:layout_height="49dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.329"
+        app:srcCompat="@drawable/choosePlace" />
+
+    <ImageButton
+        android:id="@+id/chooseCafeButton"
+        android:layout_width="264dp"
+        android:layout_height="67dp"
+        android:background="@drawable/Rectangle8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chooseStreetButton"
+        app:layout_constraintVertical_bias="0.144"
+        app:srcCompat="@drawable/cafe" />
+
+    <ImageButton
+        android:id="@+id/chooseHomeButton"
+        android:layout_width="258dp"
+        android:layout_height="65dp"
+        android:background="@drawable/Rectangle8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="0.083"
+        app:srcCompat="@drawable/home" />
+
+    <ImageButton
+        android:id="@+id/chooseStreetButton"
+        android:layout_width="265dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="268dp"
+        android:background="@drawable/Rectangle8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chooseHomeButton"
+        app:layout_constraintVertical_bias="0.882"
+        app:srcCompat="@drawable/street" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
