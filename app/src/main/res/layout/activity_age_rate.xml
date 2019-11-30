@@ -5,47 +5,44 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ageRate"
-    android:background="@drawable/Rectangle7">
+    android:background="@drawable/grad_back">
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="271dp"
-        android:layout_height="58dp"
-        android:layout_marginTop="76dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="267dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="224dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.535"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.259"
-        app:srcCompat="@drawable/chooseMode" />
+        app:srcCompat="@drawable/choosemode" />
 
     <ImageButton
+        android:onClick="choosePlace"
         android:id="@+id/chooseChildButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:background="@drawable/Rectangle8"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/rect"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5"
-        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/child" />
 
     <ImageButton
+        android:onClick="choosePlace"
         android:id="@+id/chooseAdultButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/Rectangle8"
+        android:background="@drawable/rect"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/chooseChildButton"
-        app:layout_constraintVertical_bias="0.121"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/adult" />
 
     <Button
+        android:onClick="back"
         android:id="@+id/backButton"
         android:layout_width="43dp"
         android:layout_height="39dp"

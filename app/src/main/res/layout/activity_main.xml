@@ -5,17 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/Rectangle7">
+    android:background="@drawable/grad_back">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="412dp"
+        android:layout_width="match_parent"
         android:layout_height="389dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/Ellipse4" />
+        app:srcCompat="@drawable/ellipse" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -34,10 +33,10 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/imageView3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.4"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/or" />
 
     <ImageView
@@ -52,41 +51,37 @@
         app:srcCompat="@drawable/action" />
 
     <ImageButton
+        android:onClick="play"
         android:id="@+id/playButton"
-        android:layout_width="237dp"
-        android:layout_height="72dp"
-        android:layout_marginTop="48dp"
-        android:background="@drawable/Rectangle8"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rect"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/play" />
 
     <ImageButton
         android:id="@+id/settingsButton"
-        android:layout_width="237dp"
-        android:layout_height="72dp"
-        android:background="@drawable/Rectangle8"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rect"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/playButton"
-        app:layout_constraintVertical_bias="0.073"
         app:srcCompat="@drawable/settings" />
 
     <ImageButton
         android:id="@+id/rulesButton"
-        android:layout_width="237dp"
-        android:layout_height="72dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="52dp"
-        android:background="@drawable/Rectangle8"
+        android:background="@drawable/rect"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/settingsButton"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/rules" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
