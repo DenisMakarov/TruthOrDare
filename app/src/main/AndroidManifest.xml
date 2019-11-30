@@ -10,17 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".Place"
+        <activity android:name=".Rules"></activity>
+        <activity android:name=".Players" />
+        <activity
+            android:name=".Place"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ageRate"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
             android:screenOrientation="portrait">
-
-        </activity>
-
-        <activity android:name=".ageRate"
-            android:screenOrientation="portrait">
-        </activity>
-
-        <activity android:name=".MainActivity"
-        android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

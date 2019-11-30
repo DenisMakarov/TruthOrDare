@@ -16,4 +16,9 @@ class MainActivity : AppCompatActivity() {
         val ageIntent = Intent(this,ageRate::class.java)
         startActivity(ageIntent)
     }
+
+    fun openRules(view: View){
+        val rulesIntent = Intent(this,Rules::class.java)
+        startActivity(rulesIntent)
+    }
 }
