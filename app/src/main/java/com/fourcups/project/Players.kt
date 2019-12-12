@@ -35,6 +35,7 @@ class Players : AppCompatActivity() {
 
         back.setOnClickListener{
             val intent = Intent(this,ChoosePlace::class.java)
+            playerCount = 2
             startActivity(intent)
         }
 

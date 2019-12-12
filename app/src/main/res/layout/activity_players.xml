@@ -127,7 +127,8 @@
         android:text="М"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="22dp" />
+        android:textSize="22dp"
+        android:visibility="gone" />
 
     <ImageView
         android:id="@+id/sex3"
@@ -138,6 +139,7 @@
         android:layout_marginStart="322dp"
         android:layout_marginTop="254dp"
         android:alpha="0.5"
+        android:visibility="gone"
         app:srcCompat="@drawable/empty_circle" />
 
     <EditText
@@ -156,7 +158,8 @@
         android:text="Игрок 3"
         android:textColor="@color/white"
         android:textColorHighlight="@color/white"
-        android:textSize="25dp" />
+        android:textSize="25dp"
+        android:visibility="gone" />
 
     <ImageView
         android:id="@+id/rect3"
@@ -166,6 +169,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="23dp"
         android:layout_marginTop="250dp"
+        android:visibility="gone"
         app:srcCompat="@drawable/smallrectangle_2" />
 
     <TextView
@@ -178,7 +182,8 @@
         android:text="М"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="22dp" />
+        android:textSize="22dp"
+        android:visibility="gone" />
 
     <ImageView
         android:id="@+id/sex4"
@@ -189,6 +194,7 @@
         android:layout_marginStart="322dp"
         android:layout_marginTop="315dp"
         android:alpha="0.5"
+        android:visibility="gone"
         app:srcCompat="@drawable/empty_circle" />
 
     <EditText
@@ -207,7 +213,8 @@
         android:text="Игрок 4"
         android:textColor="@color/white"
         android:textColorHighlight="@color/white"
-        android:textSize="25dp" />
+        android:textSize="25dp"
+        android:visibility="gone" />
 
     <ImageView
         android:id="@+id/rect4"
@@ -217,6 +224,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="23dp"
         android:layout_marginTop="309dp"
+        android:visibility="gone"
         app:srcCompat="@drawable/smallrectangle_2" />
 
     <TextView
@@ -229,7 +237,8 @@
         android:text="М"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="22dp" />
+        android:textSize="22dp"
+        android:visibility="gone" />
 
     <ImageView
         android:id="@+id/sex5"
@@ -240,6 +249,7 @@
         android:layout_marginStart="322dp"
         android:layout_marginTop="373dp"
         android:alpha="0.5"
+        android:visibility="gone"
         app:srcCompat="@drawable/empty_circle" />
 
     <EditText
@@ -258,7 +268,8 @@
         android:text="Игрок 5"
         android:textColor="@color/white"
         android:textColorHighlight="@color/white"
-        android:textSize="25dp" />
+        android:textSize="25dp"
+        android:visibility="gone" />
 
     <ImageView
         android:id="@+id/rect5"
@@ -268,6 +279,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="23dp"
         android:layout_marginTop="368dp"
+        android:visibility="gone"
         app:srcCompat="@drawable/smallrectangle_2" />
 
     <TextView
@@ -280,7 +292,8 @@
         android:text="М"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="22dp" />
+        android:textSize="22dp"
+        android:visibility="gone" />
 
     <ImageView
         android:id="@+id/sex6"
@@ -291,6 +304,7 @@
         android:layout_marginStart="322dp"
         android:layout_marginTop="432dp"
         android:alpha="0.5"
+        android:visibility="gone"
         app:srcCompat="@drawable/empty_circle" />
 
     <EditText
@@ -309,7 +323,8 @@
         android:text="Игрок 6"
         android:textColor="@color/white"
         android:textColorHighlight="@color/white"
-        android:textSize="25dp" />
+        android:textSize="25dp"
+        android:visibility="gone" />
 
     <ImageView
         android:id="@+id/rect6"
@@ -319,6 +334,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="23dp"
         android:layout_marginTop="427dp"
+        android:visibility="gone"
         app:srcCompat="@drawable/smallrectangle_2" />
 
     <TextView
