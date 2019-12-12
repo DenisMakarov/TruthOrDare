@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/background" />
+
+    <TextView
+        android:id="@+id/topText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="143dp"
+        android:layout_marginBottom="586dp"
+        android:fontFamily="@font/roboto_medium"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:text="ИГРОКИ" />
+
+    <TextView
+        android:id="@+id/maleText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="335dp"
+        android:layout_marginTop="184dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="М"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="22dp" />
+
+    <ImageView
+        android:id="@+id/sex1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="324dp"
+        android:layout_marginTop="179dp"
+        android:alpha="0.5"
+        app:srcCompat="@drawable/empty_circle" />
+
+    <EditText
+        android:id="@+id/pl1"
+        android:layout_width="198dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="172dp"
+        android:background="@null"
+        android:ems="10"
+        android:fontFamily="@font/roboto_medium"
+        android:inputType="textPersonName"
+        android:paddingTop="7dp"
+        android:text="Игрок 1"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textSize="25dp" />
+    <ImageView
+        android:id="@+id/rect1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="177dp"
+        app:srcCompat="@drawable/smallrectangle_2" />
+
+
+
+    <TextView
+        android:id="@+id/maleText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="335dp"
+        android:layout_marginTop="234dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="М"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="22dp" />
+
+    <ImageView
+        android:id="@+id/sex2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="324dp"
+        android:layout_marginTop="229dp"
+        android:alpha="0.5"
+        app:srcCompat="@drawable/empty_circle" />
+
+    <EditText
+        android:id="@+id/pl2"
+        android:layout_width="198dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="222dp"
+        android:background="@null"
+        android:ems="10"
+        android:fontFamily="@font/roboto_medium"
+        android:inputType="textPersonName"
+        android:paddingTop="7dp"
+        android:text="Игрок 2"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textSize="25dp" />
+
+    <ImageView
+        android:id="@+id/rect2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="227dp"
+        app:srcCompat="@drawable/smallrectangle_2" />
+
+
+    <TextView
+        android:id="@+id/maleText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="335dp"
+        android:layout_marginTop="284dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="М"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/sex3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="324dp"
+        android:layout_marginTop="279dp"
+        android:alpha="0.5"
+        android:visibility="gone"
+        app:srcCompat="@drawable/empty_circle" />
+
+    <EditText
+        android:id="@+id/pl3"
+        android:layout_width="198dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="272dp"
+        android:background="@null"
+        android:ems="10"
+        android:fontFamily="@font/roboto_medium"
+        android:inputType="textPersonName"
+        android:paddingTop="7dp"
+        android:text="Игрок 3"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textSize="25dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/rect3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="277dp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/smallrectangle_2" />
+
+
+    <TextView
+        android:id="@+id/maleText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="335dp"
+        android:layout_marginTop="334dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="М"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/sex4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="324dp"
+        android:layout_marginTop="329dp"
+        android:alpha="0.5"
+        android:visibility="gone"
+        app:srcCompat="@drawable/empty_circle" />
+
+    <EditText
+        android:id="@+id/pl4"
+        android:layout_width="198dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="322dp"
+        android:background="@null"
+        android:ems="10"
+        android:fontFamily="@font/roboto_medium"
+        android:inputType="textPersonName"
+        android:paddingTop="7dp"
+        android:text="Игрок 4"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textSize="25dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/rect4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="327dp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/smallrectangle_2" />
+
+
+    <TextView
+        android:id="@+id/maleText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="335dp"
+        android:layout_marginTop="384dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="М"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/sex5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="324dp"
+        android:layout_marginTop="379dp"
+        android:alpha="0.5"
+        android:visibility="gone"
+        app:srcCompat="@drawable/empty_circle" />
+
+    <EditText
+        android:id="@+id/pl5"
+        android:layout_width="198dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="372dp"
+        android:background="@null"
+        android:ems="10"
+        android:fontFamily="@font/roboto_medium"
+        android:inputType="textPersonName"
+        android:paddingTop="7dp"
+        android:text="Игрок 5"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textSize="25dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/rect5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="377dp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/smallrectangle_2" />
+
+
+    <TextView
+        android:id="@+id/maleText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="335dp"
+        android:layout_marginTop="434dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="М"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/sex6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="324dp"
+        android:layout_marginTop="429dp"
+        android:alpha="0.5"
+        android:visibility="gone"
+        app:srcCompat="@drawable/empty_circle" />
+
+    <EditText
+        android:id="@+id/pl6"
+        android:layout_width="198dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="422dp"
+        android:background="@null"
+        android:ems="10"
+        android:fontFamily="@font/roboto_medium"
+        android:inputType="textPersonName"
+        android:paddingTop="7dp"
+        android:text="Игрок 6"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textSize="25dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/rect6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="427dp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/smallrectangle_2" />
+
+
+
+
+
+
+
+
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/arrow" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="53dp"
+        android:layout_weight="1"
+        android:background="@drawable/button"
+        android:fontFamily="@font/roboto_medium"
+        android:paddingTop="6dp"
+        android:paddingBottom="15dp"
+        android:stateListAnimator="@null"
+        android:text="НАЧАТЬ ИГРУ"
+        android:textColor="@color/pink"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/addPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="130dp"
+        android:layout_weight="1"
+        android:background="@drawable/button_2"
+        android:fontFamily="@font/roboto_medium"
+        android:paddingTop="8dp"
+        android:paddingBottom="13dp"
+        android:stateListAnimator="@null"
+        android:text="ДОБАВИТЬ ИГРОКА"
+        android:textColor="@color/white"
+        android:textSize="24dp" />
+
+
+</RelativeLayout>
