@@ -114,7 +114,7 @@ class Players : AppCompatActivity() {
                 males[5]=false
                 maleText6.setText("Ж")
             }else{
-                males[6]=true
+                males[5]=true
                 maleText6.setText("М")
             }
         }

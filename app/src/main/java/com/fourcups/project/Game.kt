@@ -11,6 +11,8 @@ class Game : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_game)
 
+        playerName.setText(players[curPlayer])
+
         back.setOnClickListener{
             val intent = Intent(this,TurnOf::class.java)
             startActivity(intent)

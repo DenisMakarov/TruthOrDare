@@ -26,8 +26,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="172dp"
-        android:layout_marginBottom="511dp"
+        android:layout_marginEnd="174dp"
+        android:layout_marginBottom="500dp"
         android:fontFamily="@font/roboto_medium"
         android:text="ИЛИ"
         android:textColor="@color/pink"
@@ -39,13 +39,13 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="68dp"
-        android:layout_marginBottom="455dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="432dp"
         android:fontFamily="@font/roboto_black"
         android:text="ДЕЙСТВИЕ"
         android:textColor="@color/pink"
-        android:textSize="55dp"
-         />
+        android:textSize="55dp" />
+
 
     <TextView
         android:id="@+id/gameTitle1"
@@ -54,14 +54,13 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="100dp"
-        android:layout_marginEnd="76dp"
-        android:layout_marginBottom="541dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="532dp"
         android:fontFamily="@font/roboto_black"
         android:text="ПРАВДА"
         android:textColor="@color/pink"
         android:textSize="55dp" />
-
 
     <Button
         android:id="@+id/play_button"

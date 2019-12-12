@@ -28,341 +28,322 @@
         android:textSize="30dp"
         android:text="ИГРОКИ" />
 
-    <TextView
-        android:id="@+id/maleText1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="335dp"
-        android:layout_marginTop="184dp"
-        android:fontFamily="@font/roboto_medium"
-        android:text="М"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="22dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="544dp"
+        android:marginBottom="100dp">
 
-    <ImageView
-        android:id="@+id/sex1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="324dp"
-        android:layout_marginTop="179dp"
-        android:alpha="0.5"
-        app:srcCompat="@drawable/empty_circle" />
+        <TextView
+            android:id="@+id/maleText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="335dp"
+            android:layout_marginTop="184dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="М"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
 
-    <EditText
-        android:id="@+id/pl1"
-        android:layout_width="198dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="172dp"
-        android:background="@null"
-        android:ems="10"
-        android:fontFamily="@font/roboto_medium"
-        android:inputType="textPersonName"
-        android:paddingTop="7dp"
-        android:text="Игрок 1"
-        android:textColor="@color/white"
-        android:textColorHighlight="@color/white"
-        android:textSize="25dp" />
-    <ImageView
-        android:id="@+id/rect1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="177dp"
-        app:srcCompat="@drawable/smallrectangle_2" />
+        <ImageView
+            android:id="@+id/sex1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="324dp"
+            android:layout_marginTop="179dp"
+            android:alpha="0.5"
+            app:srcCompat="@drawable/empty_circle" />
 
+        <EditText
+            android:id="@+id/pl1"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="179dp"
+            android:background="@null"
+            android:ems="10"
+            android:fontFamily="@font/roboto_medium"
+            android:inputType="textPersonName"
+            android:paddingTop="7dp"
+            android:text="Игрок 1"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textSize="25dp" />
 
-
-    <TextView
-        android:id="@+id/maleText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="335dp"
-        android:layout_marginTop="234dp"
-        android:fontFamily="@font/roboto_medium"
-        android:text="М"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="22dp" />
-
-    <ImageView
-        android:id="@+id/sex2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="324dp"
-        android:layout_marginTop="229dp"
-        android:alpha="0.5"
-        app:srcCompat="@drawable/empty_circle" />
-
-    <EditText
-        android:id="@+id/pl2"
-        android:layout_width="198dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="222dp"
-        android:background="@null"
-        android:ems="10"
-        android:fontFamily="@font/roboto_medium"
-        android:inputType="textPersonName"
-        android:paddingTop="7dp"
-        android:text="Игрок 2"
-        android:textColor="@color/white"
-        android:textColorHighlight="@color/white"
-        android:textSize="25dp" />
-
-    <ImageView
-        android:id="@+id/rect2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="227dp"
-        app:srcCompat="@drawable/smallrectangle_2" />
+        <ImageView
+            android:id="@+id/rect1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="177dp"
+            app:srcCompat="@drawable/smallrectangle_2" />
 
 
-    <TextView
-        android:id="@+id/maleText3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="335dp"
-        android:layout_marginTop="284dp"
-        android:fontFamily="@font/roboto_medium"
-        android:text="М"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="22dp"
-        android:visibility="gone" />
+        <TextView
+            android:id="@+id/maleText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="324dp"
+            android:layout_marginTop="241dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="М"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
 
-    <ImageView
-        android:id="@+id/sex3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="324dp"
-        android:layout_marginTop="279dp"
-        android:alpha="0.5"
-        android:visibility="gone"
-        app:srcCompat="@drawable/empty_circle" />
+        <ImageView
+            android:id="@+id/sex2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="324dp"
+            android:layout_marginTop="241dp"
+            android:alpha="0.5"
+            app:srcCompat="@drawable/empty_circle" />
 
-    <EditText
-        android:id="@+id/pl3"
-        android:layout_width="198dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="272dp"
-        android:background="@null"
-        android:ems="10"
-        android:fontFamily="@font/roboto_medium"
-        android:inputType="textPersonName"
-        android:paddingTop="7dp"
-        android:text="Игрок 3"
-        android:textColor="@color/white"
-        android:textColorHighlight="@color/white"
-        android:textSize="25dp"
-        android:visibility="gone" />
+        <EditText
+            android:id="@+id/pl2"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="240dp"
+            android:background="@null"
+            android:ems="10"
+            android:fontFamily="@font/roboto_medium"
+            android:inputType="textPersonName"
+            android:paddingTop="7dp"
+            android:text="Игрок 2"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textSize="25dp" />
 
-    <ImageView
-        android:id="@+id/rect3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="277dp"
-        android:visibility="gone"
-        app:srcCompat="@drawable/smallrectangle_2" />
+        <ImageView
+            android:id="@+id/rect2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="237dp"
+            app:srcCompat="@drawable/smallrectangle_2" />
 
 
-    <TextView
-        android:id="@+id/maleText4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="335dp"
-        android:layout_marginTop="334dp"
-        android:fontFamily="@font/roboto_medium"
-        android:text="М"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="22dp"
-        android:visibility="gone" />
+        <TextView
+            android:id="@+id/maleText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="323dp"
+            android:layout_marginTop="300dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="М"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
 
-    <ImageView
-        android:id="@+id/sex4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="324dp"
-        android:layout_marginTop="329dp"
-        android:alpha="0.5"
-        android:visibility="gone"
-        app:srcCompat="@drawable/empty_circle" />
+        <ImageView
+            android:id="@+id/sex3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="323dp"
+            android:layout_marginTop="300dp"
+            android:alpha="0.5"
+            app:srcCompat="@drawable/empty_circle" />
 
-    <EditText
-        android:id="@+id/pl4"
-        android:layout_width="198dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="322dp"
-        android:background="@null"
-        android:ems="10"
-        android:fontFamily="@font/roboto_medium"
-        android:inputType="textPersonName"
-        android:paddingTop="7dp"
-        android:text="Игрок 4"
-        android:textColor="@color/white"
-        android:textColorHighlight="@color/white"
-        android:textSize="25dp"
-        android:visibility="gone" />
+        <EditText
+            android:id="@+id/pl3"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="299dp"
+            android:background="@null"
+            android:ems="10"
+            android:fontFamily="@font/roboto_medium"
+            android:inputType="textPersonName"
+            android:paddingTop="7dp"
+            android:text="Игрок 3"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textSize="25dp" />
 
-    <ImageView
-        android:id="@+id/rect4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="327dp"
-        android:visibility="gone"
-        app:srcCompat="@drawable/smallrectangle_2" />
+        <ImageView
+            android:id="@+id/rect3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="296dp"
+            app:srcCompat="@drawable/smallrectangle_2" />
 
 
-    <TextView
-        android:id="@+id/maleText5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="335dp"
-        android:layout_marginTop="384dp"
-        android:fontFamily="@font/roboto_medium"
-        android:text="М"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="22dp"
-        android:visibility="gone" />
+        <TextView
+            android:id="@+id/maleText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="323dp"
+            android:layout_marginTop="361dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="М"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
 
-    <ImageView
-        android:id="@+id/sex5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="324dp"
-        android:layout_marginTop="379dp"
-        android:alpha="0.5"
-        android:visibility="gone"
-        app:srcCompat="@drawable/empty_circle" />
+        <ImageView
+            android:id="@+id/sex4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="323dp"
+            android:layout_marginTop="361dp"
+            android:alpha="0.5"
+            app:srcCompat="@drawable/empty_circle" />
 
-    <EditText
-        android:id="@+id/pl5"
-        android:layout_width="198dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="372dp"
-        android:background="@null"
-        android:ems="10"
-        android:fontFamily="@font/roboto_medium"
-        android:inputType="textPersonName"
-        android:paddingTop="7dp"
-        android:text="Игрок 5"
-        android:textColor="@color/white"
-        android:textColorHighlight="@color/white"
-        android:textSize="25dp"
-        android:visibility="gone" />
+        <EditText
+            android:id="@+id/pl4"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="358dp"
+            android:background="@null"
+            android:ems="10"
+            android:fontFamily="@font/roboto_medium"
+            android:inputType="textPersonName"
+            android:paddingTop="7dp"
+            android:text="Игрок 4"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textSize="25dp" />
 
-    <ImageView
-        android:id="@+id/rect5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="377dp"
-        android:visibility="gone"
-        app:srcCompat="@drawable/smallrectangle_2" />
+        <ImageView
+            android:id="@+id/rect4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="355dp"
+            app:srcCompat="@drawable/smallrectangle_2" />
 
 
-    <TextView
-        android:id="@+id/maleText6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="335dp"
-        android:layout_marginTop="434dp"
-        android:fontFamily="@font/roboto_medium"
-        android:text="М"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="22dp"
-        android:visibility="gone" />
+        <TextView
+            android:id="@+id/maleText5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="324dp"
+            android:layout_marginTop="419dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="М"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
 
-    <ImageView
-        android:id="@+id/sex6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="324dp"
-        android:layout_marginTop="429dp"
-        android:alpha="0.5"
-        android:visibility="gone"
-        app:srcCompat="@drawable/empty_circle" />
+        <ImageView
+            android:id="@+id/sex5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="324dp"
+            android:layout_marginTop="419dp"
+            android:alpha="0.5"
+            app:srcCompat="@drawable/empty_circle" />
 
-    <EditText
-        android:id="@+id/pl6"
-        android:layout_width="198dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="422dp"
-        android:background="@null"
-        android:ems="10"
-        android:fontFamily="@font/roboto_medium"
-        android:inputType="textPersonName"
-        android:paddingTop="7dp"
-        android:text="Игрок 6"
-        android:textColor="@color/white"
-        android:textColorHighlight="@color/white"
-        android:textSize="25dp"
-        android:visibility="gone" />
+        <EditText
+            android:id="@+id/pl5"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="418dp"
+            android:background="@null"
+            android:ems="10"
+            android:fontFamily="@font/roboto_medium"
+            android:inputType="textPersonName"
+            android:paddingTop="7dp"
+            android:text="Игрок 5"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textSize="25dp" />
 
-    <ImageView
-        android:id="@+id/rect6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="427dp"
-        android:visibility="gone"
-        app:srcCompat="@drawable/smallrectangle_2" />
+        <ImageView
+            android:id="@+id/rect5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="414dp"
+            app:srcCompat="@drawable/smallrectangle_2" />
 
 
+        <TextView
+            android:id="@+id/maleText6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="323dp"
+            android:layout_marginTop="478dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="М"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
 
+        <ImageView
+            android:id="@+id/sex6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="323dp"
+            android:layout_marginTop="478dp"
+            android:alpha="0.5"
+            app:srcCompat="@drawable/empty_circle" />
 
+        <EditText
+            android:id="@+id/pl6"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="478dp"
+            android:background="@null"
+            android:ems="10"
+            android:fontFamily="@font/roboto_medium"
+            android:inputType="textPersonName"
+            android:paddingTop="7dp"
+            android:text="Игрок 6"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textSize="25dp" />
 
-
-
-
-
+        <ImageView
+            android:id="@+id/rect6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="473dp"
+            app:srcCompat="@drawable/smallrectangle_2" />
+    </RelativeLayout>
     <ImageView
         android:id="@+id/back"
         android:layout_width="wrap_content"
@@ -378,7 +359,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="60dp"
-        android:layout_marginBottom="53dp"
+        android:layout_marginBottom="30dp"
         android:layout_weight="1"
         android:background="@drawable/button"
         android:fontFamily="@font/roboto_medium"
@@ -396,7 +377,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="75dp"
-        android:layout_marginBottom="130dp"
+        android:layout_marginBottom="107dp"
         android:layout_weight="1"
         android:background="@drawable/button_2"
         android:fontFamily="@font/roboto_medium"
