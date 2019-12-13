@@ -16,6 +16,11 @@ class MainMenu : AppCompatActivity() {
             startActivity(intent)
         }
 
+        question.setOnClickListener {
+            val intent = Intent(this,AddQuestion::class.java)
+            startActivity(intent)
+        }
+
         rules.setOnClickListener {
             val intent = Intent(this, Rules::class.java)
             startActivity(intent)
