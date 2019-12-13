@@ -3,6 +3,7 @@ package com.fourcups.project
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import kotlinx.android.synthetic.main.activity_main_menu.*
 
 class MainMenu : AppCompatActivity() {
@@ -13,6 +14,7 @@ class MainMenu : AppCompatActivity() {
 
         play_button.setOnClickListener{
             val intent = Intent(this,ChooseMod::class.java)
+            Log.d("gocheck",Go.toString())
             startActivity(intent)
         }
 
