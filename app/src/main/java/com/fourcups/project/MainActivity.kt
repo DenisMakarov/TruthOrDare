@@ -11,8 +11,11 @@ import java.io.OutputStream
 import java.net.Socket
 import java.nio.charset.Charset
 import java.util.*
+import java.util.concurrent.TimeUnit
 import kotlin.concurrent.thread
 
+var Go = false
+var registerResult = ""
 
 
 class MainActivity : AppCompatActivity() {
@@ -52,9 +55,12 @@ class MainActivity : AppCompatActivity() {
             servIntent.putExtra("reg_password",reg_password)
             startService(servIntent)
 
-            val intent = Intent(this,MainMenu::class.java)
+
+
+            val intent = Intent(this, MainMenu::class.java)
             startActivity(intent)
         }
+
         login_button.setOnClickListener {
             val log_login:String = login_email.text.toString()
             val log_password:String = login_password.text.toString()
@@ -80,41 +86,5 @@ class MainActivity : AppCompatActivity() {
         registration_layout.visibility = View.GONE
         login_layout.visibility=View.GONE
         home_ll.visibility=View.VISIBLE
-    }
-}
-
-class Client(address: String, port: Int) {
-    private val connection: Socket = Socket(address, port)
-    private var connected: Boolean = true
-
-    init {
-        println("Connected to server at $address on port $port")
-    }
-
-    private val reader: Scanner = Scanner(connection.getInputStream())
-    private val writer: OutputStream = connection.getOutputStream()
-
-    fun run() {
-        thread { read() }
-        while (connected) {
-            val input = readLine() ?: ""
-            if ("exit" in input) {
-                connected = false
-                reader.close()
-                connection.close()
-            } else {
-                write(input)
-            }
-        }
-
-    }
-
-    fun write(message: String) {
-        writer.write((message + '\n').toByteArray(Charset.defaultCharset()))
-    }
-
-    fun read() {
-        while (connected)
-            println(reader.nextLine())
     }
 }
