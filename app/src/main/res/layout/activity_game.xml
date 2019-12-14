@@ -34,9 +34,9 @@
         android:layout_height="258dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="74dp"
-        android:layout_marginBottom="255dp"
-
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="229dp"
+        android:fontFamily="@font/roboto_medium"
         android:minLines="6"
         android:text="Расскажи три интересных факта о себе"
         android:textAlignment="center"
@@ -47,13 +47,14 @@
         android:id="@+id/playerName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="516dp"
         android:fontFamily="@font/roboto_medium"
         android:text="АНГЕЛИНА"
         android:textColor="@color/pink"
-        android:textSize="24dp" />
+        android:textSize="24dp"
+        android:layout_marginTop="193dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="110dp"
+        android:layout_alignStart="@+id/bground" />
 
     <Button
         android:id="@+id/next"
@@ -61,8 +62,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="65dp"
-        android:layout_marginBottom="34dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="35dp"
         android:layout_weight="1"
         android:background="@drawable/button"
         android:fontFamily="@font/roboto_medium"
@@ -86,21 +87,21 @@
         android:id="@+id/swap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="277dp"
-        android:layout_marginBottom="218dp"
-        android:background="@drawable/reverse" />
+        android:background="@drawable/reverse"
+        android:layout_alignTop="@+id/bground"
+        android:layout_marginTop="486dp"
+        android:layout_marginStart="50dp"
+        android:layout_alignStart="@+id/bground" />
 
     <ImageView
         android:id="@+id/dislike"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="91dp"
-        android:layout_marginBottom="218dp"
-        android:background="@drawable/delete" />
+        android:background="@drawable/delete"
+        android:layout_marginStart="265dp"
+        android:layout_alignStart="@+id/bground"
+        android:layout_alignTop="@+id/bground"
+        android:layout_marginTop="487dp" />
 
 
 </RelativeLayout>

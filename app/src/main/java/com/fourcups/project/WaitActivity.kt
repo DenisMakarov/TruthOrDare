@@ -3,6 +3,7 @@ package com.fourcups.project
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import java.util.concurrent.TimeUnit
 
 class WaitActivity : AppCompatActivity() {
 
@@ -22,4 +23,5 @@ class WaitActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
 }

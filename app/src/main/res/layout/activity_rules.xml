@@ -31,10 +31,6 @@
         android:id="@+id/gameTitle2"
         android:layout_width="348dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="44dp"
         android:fontFamily="@font/roboto"
         android:text="
 Для игры необохдимо:
@@ -47,7 +43,11 @@
 Помните, что это ИГРА и от нее должны получать удовольствие все ее участники!"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="22dp" />
+        android:textSize="22dp"
+        android:layout_marginTop="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="36dp" />
 
     <ImageButton
         android:id="@+id/back"

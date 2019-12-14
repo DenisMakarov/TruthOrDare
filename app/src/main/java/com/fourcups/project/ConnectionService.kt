@@ -32,6 +32,7 @@ class ConnectionService : Service() {
             val reg_pass = intent!!.getStringExtra("reg_password")
             ws.execute(act,reg_login,reg_pass)
         }else if(act == "login"){
+            Log.d("taging","enter")
             val log_login = intent!!.getStringExtra("log_login")
             val log_pass = intent!!.getStringExtra("log_password")
             ws.execute(act,log_login,log_pass)
@@ -76,7 +77,7 @@ class WatchSocket : AsyncTask<String, Void, String>() {
 
     override fun doInBackground(vararg params: String): String? {
         if (!socketConnected) {
-            client = Socket("172.23.111.213", 53210)
+            client = Socket("192.168.43.174", 53210)
             socketConnected = true
             output = client.outputStream
             input = client.inputStream

@@ -10,6 +10,7 @@ class WaitContent : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_wait_content)
         if (loaded){
+            loaded=false
             val intent = Intent(this,Game::class.java)
             startActivity(intent)
         }else{
