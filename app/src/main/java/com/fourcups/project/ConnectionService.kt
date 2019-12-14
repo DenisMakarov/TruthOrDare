@@ -41,10 +41,14 @@ class ConnectionService : Service() {
             val content = intent!!.getStringExtra("content")
             ws.execute(act,flag,content)
         }else if (act=="next_dare"){
-            Log.d("heaven2","hello")
             ws.execute(act)
         }else if (act=="next_truth"){
-            Log.d("heaven2","hello")
+            ws.execute(act)
+        }else if (act=="send_info"){
+            val place = intent!!.getStringExtra("location")
+            val age = intent!!.getStringExtra("age")
+            ws.execute(act,place,age)
+        }else if(act=="dislike"){
             ws.execute(act)
         }
         return super.onStartCommand(intent, flags, startId)
@@ -80,7 +84,6 @@ class WatchSocket : AsyncTask<String, Void, String>() {
             output = client.outputStream
             input = client.inputStream
         }
-        Log.d("executeTAG",params[0])
         if (params[0]=="registration"){
             output.write("[sign_up,${params[1]},${params[2]}]".toByteArray())
             val bteString = ByteArray(100)
@@ -115,6 +118,9 @@ class WatchSocket : AsyncTask<String, Void, String>() {
             }
         }else if(params[0]=="add_task") {
             output.write("[new_task,${params[1]},${params[2]}]".toByteArray())
+            val bteString = ByteArray(512)
+            val size = input.read(bteString)
+
         }else if(params[0]=="next_dare"){
             Log.d("hell1","hello")
 
@@ -139,6 +145,14 @@ class WatchSocket : AsyncTask<String, Void, String>() {
 
             cur_content = stroka.toString(Charset.defaultCharset())
             loaded = true
+        }else if(params[0]=="send_info"){
+            output.write("[start,${params[1]},${params[2]}]".toByteArray())
+            val bteString = ByteArray(512)
+            val size = input.read(bteString)
+        }else if(params[0]=="dislike"){
+            output.write("[dislike]".toByteArray())
+            val bteString = ByteArray(512)
+            val size = input.read(bteString)
         }
         return null
     }

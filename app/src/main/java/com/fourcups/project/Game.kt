@@ -27,10 +27,27 @@ class Game : AppCompatActivity() {
             startActivity(intent)
         }
         swap.setOnClickListener{
+            if (curAct =="dare") {
+                val servIntent = Intent(this, ConnectionService::class.java)
+                servIntent.putExtra("action", "next_dare")
+                startService(servIntent)
 
+                val intent = Intent(this, WaitContent::class.java)
+                startActivity(intent)
+            }
+            if (curAct =="truth") {
+                val servIntent = Intent(this, ConnectionService::class.java)
+                servIntent.putExtra("action", "next_truth")
+                startService(servIntent)
+
+                val intent = Intent(this, WaitContent::class.java)
+                startActivity(intent)
+            }
         }
         dislike.setOnClickListener{
-
+            val servIntent = Intent(this, ConnectionService::class.java)
+            servIntent.putExtra("action", "dislike")
+            startService(servIntent)
         }
     }
 }

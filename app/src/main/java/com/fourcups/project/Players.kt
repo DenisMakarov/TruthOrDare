@@ -4,7 +4,9 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import kotlinx.android.synthetic.main.activity_add_question.*
 import kotlinx.android.synthetic.main.activity_players.*
+import kotlinx.android.synthetic.main.activity_players.back
 
 var players = arrayOf("Игрок 1","Игрок 2","Игрок 3","Игрок 4","Игрок 5","Игрок 6")
 var males = arrayOf(true,true,true,true,true,true)
@@ -46,6 +48,13 @@ class Players : AppCompatActivity() {
         }
 
         start.setOnClickListener {
+            val servIntent = Intent(this,ConnectionService::class.java)
+            servIntent.putExtra("action","send_info")
+            servIntent.putExtra("location", place)
+            servIntent.putExtra("age", age.toString())
+            startService(servIntent)
+
+
             players[0] = pl1.text.toString()
             players[1] = pl2.text.toString()
             if (playerCount>=3){

@@ -19,7 +19,7 @@ class ChoosePlace : AppCompatActivity() {
             startActivity(intent)
         }
         house.setOnClickListener {
-            place = "house"
+            place = "home"
             val intent = Intent(this, Players::class.java)
             startActivity(intent)
         }
