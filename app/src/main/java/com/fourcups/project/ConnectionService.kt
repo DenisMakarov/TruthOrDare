@@ -19,7 +19,6 @@ class ConnectionService : Service() {
 
     override fun onCreate() {
         super.onCreate()
-        Log.d("onCreateTAG","created")
     }
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
@@ -56,11 +55,9 @@ class ConnectionService : Service() {
 
     override fun onDestroy() {
         super.onDestroy()
-        Log.d("onDestroTAG","destroyed")
     }
 
     override fun onBind(intent: Intent): IBinder? {
-        Log.d("onBindTAG","Binded")
         return null
     }
 }
@@ -79,11 +76,12 @@ class WatchSocket : AsyncTask<String, Void, String>() {
 
     override fun doInBackground(vararg params: String): String? {
         if (!socketConnected) {
-            client = Socket("192.168.1.4", 53211)
+            client = Socket("172.23.111.213", 53210)
             socketConnected = true
             output = client.outputStream
             input = client.inputStream
         }
+
         if (params[0]=="registration"){
             output.write("[sign_up,${params[1]},${params[2]}]".toByteArray())
             val bteString = ByteArray(100)
@@ -107,7 +105,6 @@ class WatchSocket : AsyncTask<String, Void, String>() {
             val stroka = ByteArray(size)
             for (i in 0..size-1)
                 stroka[i] = bteString[i]
-            Log.d("inputcall",stroka.toString(Charset.defaultCharset()))
             if (stroka.toString(Charset.defaultCharset()) == "False" ||
                 stroka.toString(Charset.defaultCharset()) == "Error"){
                 Next = false
@@ -122,8 +119,6 @@ class WatchSocket : AsyncTask<String, Void, String>() {
             val size = input.read(bteString)
 
         }else if(params[0]=="next_dare"){
-            Log.d("hell1","hello")
-
             output.write("[next_dare]".toByteArray())
             val bteString = ByteArray(512)
             val size = input.read(bteString)
@@ -134,8 +129,6 @@ class WatchSocket : AsyncTask<String, Void, String>() {
             cur_content = stroka.toString(Charset.defaultCharset())
             loaded = true
         }else if(params[0]=="next_truth"){
-            Log.d("hell2","hello")
-
             output.write("[next_quest]".toByteArray())
             val bteString = ByteArray(512)
             val size = input.read(bteString)
@@ -162,4 +155,3 @@ class WatchSocket : AsyncTask<String, Void, String>() {
     }
 
 }
-

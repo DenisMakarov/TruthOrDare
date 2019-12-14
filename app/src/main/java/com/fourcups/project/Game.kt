@@ -27,10 +27,12 @@ class Game : AppCompatActivity() {
             startActivity(intent)
         }
         swap.setOnClickListener{
+            loaded = false
             if (curAct =="dare") {
                 val servIntent = Intent(this, ConnectionService::class.java)
                 servIntent.putExtra("action", "next_dare")
                 startService(servIntent)
+
 
                 val intent = Intent(this, WaitContent::class.java)
                 startActivity(intent)
