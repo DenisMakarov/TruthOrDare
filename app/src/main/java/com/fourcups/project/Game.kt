@@ -5,6 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_game.*
 
+var cur_content = ""
+var loaded = false
+
 class Game : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,6 +15,7 @@ class Game : AppCompatActivity() {
         setContentView(R.layout.activity_game)
 
         playerName.setText(players[curPlayer])
+        content.setText(cur_content)
 
         back.setOnClickListener{
             val intent = Intent(this,TurnOf::class.java)

@@ -4,7 +4,9 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import kotlinx.android.synthetic.main.activity_add_question.*
 import kotlinx.android.synthetic.main.activity_turn_of.*
+import kotlinx.android.synthetic.main.activity_turn_of.back
 
 var curAct =""
 
@@ -19,14 +21,26 @@ class TurnOf : AppCompatActivity() {
             startActivity(intent)
         }
         playerName.setText(players[curPlayer].toString())
+
         dare.setOnClickListener {
             curAct = "dare"
-            var intent = Intent(this,Game::class.java)
+
+            val servIntent = Intent(this,ConnectionService::class.java)
+            servIntent.putExtra("action", "next_dare")
+            startService(servIntent)
+
+            val intent = Intent(this,WaitContent::class.java)
             startActivity(intent)
         }
         truth.setOnClickListener {
             curAct = "truth"
-            var intent = Intent(this,Game::class.java)
+
+            val servIntent = Intent(this,ConnectionService::class.java)
+            servIntent.putExtra("action", "next_truth")
+            startService(servIntent)
+
+
+            val intent = Intent(this,WaitContent::class.java)
             startActivity(intent)
         }
     }

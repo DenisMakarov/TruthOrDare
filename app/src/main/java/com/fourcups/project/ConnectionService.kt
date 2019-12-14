@@ -16,17 +16,18 @@ import java.nio.charset.Charset
 import java.util.concurrent.TimeUnit
 
 class ConnectionService : Service() {
-    lateinit var ws:WatchSocket
 
     override fun onCreate() {
         super.onCreate()
-        ws = WatchSocket()
         Log.d("onCreateTAG","created")
     }
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         Log.d("onStartCommandTAG","onStartCommand")
         var act = intent!!.getStringExtra("action")
+
+        val ws = WatchSocket()
+
         if (act == "registration") {
             val reg_login = intent!!.getStringExtra("reg_login")
             val reg_pass = intent!!.getStringExtra("reg_password")
@@ -39,6 +40,12 @@ class ConnectionService : Service() {
             val flag = intent!!.getStringExtra("flag")
             val content = intent!!.getStringExtra("content")
             ws.execute(act,flag,content)
+        }else if (act=="next_dare"){
+            Log.d("heaven2","hello")
+            ws.execute(act)
+        }else if (act=="next_truth"){
+            Log.d("heaven2","hello")
+            ws.execute(act)
         }
         return super.onStartCommand(intent, flags, startId)
     }
@@ -56,11 +63,12 @@ class ConnectionService : Service() {
 
 val charset = Charsets.UTF_8
 class WatchSocket : AsyncTask<String, Void, String>() {
-    var socketConnected = false
-    lateinit var client: Socket
-    lateinit var output: OutputStream
-    lateinit var input: InputStream
-
+    companion object {
+        var socketConnected = false
+        lateinit var client: Socket
+        lateinit var output: OutputStream
+        lateinit var input: InputStream
+    }
     override fun onPreExecute() {
         super.onPreExecute()
     }
@@ -68,10 +76,11 @@ class WatchSocket : AsyncTask<String, Void, String>() {
     override fun doInBackground(vararg params: String): String? {
         if (!socketConnected) {
             client = Socket("192.168.1.4", 53211)
+            socketConnected = true
             output = client.outputStream
             input = client.inputStream
-            socketConnected = true
         }
+        Log.d("executeTAG",params[0])
         if (params[0]=="registration"){
             output.write("[sign_up,${params[1]},${params[2]}]".toByteArray())
             val bteString = ByteArray(100)
@@ -106,6 +115,30 @@ class WatchSocket : AsyncTask<String, Void, String>() {
             }
         }else if(params[0]=="add_task") {
             output.write("[new_task,${params[1]},${params[2]}]".toByteArray())
+        }else if(params[0]=="next_dare"){
+            Log.d("hell1","hello")
+
+            output.write("[next_dare]".toByteArray())
+            val bteString = ByteArray(512)
+            val size = input.read(bteString)
+            val stroka = ByteArray(size)
+            for (i in 0..size-1)
+                stroka[i] = bteString[i]
+
+            cur_content = stroka.toString(Charset.defaultCharset())
+            loaded = true
+        }else if(params[0]=="next_truth"){
+            Log.d("hell2","hello")
+
+            output.write("[next_quest]".toByteArray())
+            val bteString = ByteArray(512)
+            val size = input.read(bteString)
+            val stroka = ByteArray(size)
+            for (i in 0..size-1)
+                stroka[i] = bteString[i]
+
+            cur_content = stroka.toString(Charset.defaultCharset())
+            loaded = true
         }
         return null
     }
